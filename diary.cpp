@@ -28,10 +28,20 @@ void Diary::printContentList(std::string start, std::string end) {
     for(Index::iterator iter = Entity.begin(); iter != Entity.end(); iter++) {
         if(iter->first < start) continue;
         if(iter->first > end) break; // 因为map容器中会根据key的顺序来排列元素，所以我们可以顺序查找
-        std::cout << iter->first << ":\n" << iter->second << "\n";
+        std::cout << "----" << iter->first << ":\n" << iter->second << "\n";
     }
 }
 
 void Diary::printContentOne(std::string date) {
-    std::cout << date << "\n" << Entity[date] << "\n";
+    if(!Entity.count(date)) {
+        std::cout << "There is no diary in that day\n";
+        return;
+    }
+    std::cout << "----" << date << ":\n" << Entity[date] << "\n";
+}
+
+void Diary::printContentAll() {
+    for(Index::iterator iter = Entity.begin(); iter != Entity.end(); iter++) {
+        std::cout << "----" << iter->first << ":\n" << iter->second << "\n";
+    }
 }

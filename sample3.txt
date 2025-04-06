@@ -1,0 +1,12 @@
+pdadd 2023-10-01
+Today's weather is sunny
+Wrote a C++ program
+.
+pdadd 2023-10-02
+Learned about STL containers
+Need to practice more
+.
+pdremove 2023-10-01
+pdshow 2023-99-99
+pdlist
+exit

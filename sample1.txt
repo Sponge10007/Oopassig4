@@ -1,0 +1,25 @@
+pdadd 1-1-01
+1th day
+.
+pdadd 1-1-02
+2th day
+.
+pdadd 1-1-03
+3th day
+.
+pdadd 1-1-05
+5th day
+.
+pdadd 1-1-07
+7th day
+.
+pdlist
+pdlist 1-1-01 1-1-04
+pdremove 1-1-05
+pdlist
+pdadd 1-1-01
+.
+Change the 1th day
+pdlist
+pdshow 1-1-01
+exit

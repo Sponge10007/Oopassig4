@@ -16,6 +16,7 @@ class Diary {
         void insertEntity(std::string date, std::string entity);
         void printContentList(std::string start, std::string end);
         void printContentOne(std::string date);
+        void printContentAll();
 };
 
 #endif
